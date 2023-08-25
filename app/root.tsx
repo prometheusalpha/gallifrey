@@ -21,8 +21,8 @@ import stylesheet from "~/tailwind.css";
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Gallifrey" },
+    { name: "description", content: "Welcome to Gallifrey!" },
   ];
 };
 
