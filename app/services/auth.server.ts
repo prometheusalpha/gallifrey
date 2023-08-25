@@ -12,9 +12,7 @@ let googleStrategy = new GoogleStrategy(
     callbackURL: "http://localhost:3000/callback",
   },
   async ({ accessToken, refreshToken, extraParams, profile }) => {
-    return {
-      name: profile.displayName || "",
-    } as User;
+    return profile;
   }
 );
 

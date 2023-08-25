@@ -1,3 +1,4 @@
+import { Avatar, Group } from "@mantine/core";
 import type { LoaderArgs, V2_MetaFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import Layout from "~/components/Layout";
@@ -23,7 +24,13 @@ export default function Index() {
 
   return (
     <Layout>
-      <div>{user.name}</div>
+      <Group>
+        <Avatar src={user.photos[0].value} alt="it's me" radius="xl" />
+        <div>
+          <p>{user.displayName}</p>
+          <p className="text-xs opacity-70">{user.emails[0].value}</p>
+        </div>
+      </Group>
     </Layout>
   );
 }

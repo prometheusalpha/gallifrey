@@ -7,7 +7,7 @@ export default function LogoutButton() {
     <div className="p-3">
       <Link to={"/logout"}>
         <Group>
-          <IconLogout size="24" stroke={1.5} color="teal" />
+          <IconLogout size="24" stroke={2} />
           Logout
         </Group>
       </Link>

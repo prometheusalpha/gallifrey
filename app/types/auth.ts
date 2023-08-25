@@ -1,3 +1,3 @@
-export type User = {
-  name: string;
-};
+import { GoogleProfile } from "remix-auth-google";
+
+export type User = GoogleProfile;
