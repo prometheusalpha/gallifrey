@@ -1,17 +1,10 @@
 import { ColorScheme } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { IconMoon, IconSun } from "@tabler/icons-react";
+import useTheme from "~/composables/useTheme";
 
 export default function ToggleDarkMode() {
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: "mantine-color-scheme",
-    defaultValue: "dark",
-    getInitialValueInEffect: true,
-  });
-
-  const toggleColorScheme = () => {
-    setColorScheme(colorScheme === "dark" ? "light" : "dark");
-  };
+  const { colorScheme, toggleColorScheme } = useTheme();
 
   return (
     <div className="p-3 cursor-pointer" onClick={toggleColorScheme}>

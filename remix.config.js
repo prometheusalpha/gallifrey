@@ -2,6 +2,7 @@
 module.exports = {
   tailwind: true,
   ignoredRouteFiles: ["**/.*"],
+  serverDependenciesToBundle: "all",
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",

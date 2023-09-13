@@ -1,9 +1,8 @@
-import { GoogleStrategy } from "remix-auth-google";
+import { GoogleProfile, GoogleStrategy } from "remix-auth-google";
 import { Authenticator } from "remix-auth";
 import { sessionStorage } from "./storage.server";
-import { User } from "~/types/auth";
 
-export let authenticator = new Authenticator<User>(sessionStorage);
+export let authenticator = new Authenticator<GoogleProfile>(sessionStorage);
 
 let googleStrategy = new GoogleStrategy(
   {
