@@ -1,5 +1,5 @@
 import { PassThrough } from "stream";
-import type { EntryContext } from "@remix-run/node";
+import type { EntryContext } from "@remix-run/cloudflare";
 import { Response } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { renderToPipeableStream } from "react-dom/server";
