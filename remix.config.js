@@ -2,7 +2,7 @@
 module.exports = {
   tailwind: true,
   ignoredRouteFiles: ["**/.*"],
-  serverDependenciesToBundle: "all",
+  serverDependenciesToBundle: [/^(?!.*\bsvg-pan-zoom\b).*$/],
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",
